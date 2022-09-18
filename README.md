@@ -1,4 +1,4 @@
-# react-clarity
+# react-microsoft-clarity
 Small component to implement Microsoft Clarity into your React Application
 
 # Installation
