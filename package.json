@@ -1,0 +1,24 @@
+{
+  "name": "react-microsoft-clarity",
+  "version": "1.0.0",
+  "description": "A simple small component to implement Microsoft Clarity into your React Application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcoPerson/react-clarity.git"
+  },
+  "keywords": [
+    "Clarity",
+    "Microsoft",
+    "React"
+  ],
+  "author": "MarcoPerson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MarcoPerson/react-clarity/issues"
+  },
+  "homepage": "https://github.com/MarcoPerson/react-clarity#readme"
+}
