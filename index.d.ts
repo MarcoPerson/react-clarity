@@ -1,4 +1,4 @@
-export module hotjar {
+export module clarity {
     /**
      * Initialize Clarity tracking.
      * @param id This is the ID which tells Clarity which site settings it should load and where it should save the data collected.
