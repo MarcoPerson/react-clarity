@@ -3,12 +3,12 @@ export module clarity {
      * Initialize Clarity tracking.
      * @param id This is the ID which tells Clarity which site settings it should load and where it should save the data collected.
      */
-    export function initialize(id: string): void;
+    export function init(id: string): void;
   
     /**
      * Check if Clarity has been initialized
      */
-    export function initialized(): boolean;
+    export function hasStarted(): boolean;
   
     /**
      * Identify user

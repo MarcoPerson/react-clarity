@@ -3,17 +3,17 @@ var clarityInit = require("./src/react-clarity");
 function clarity() {
   var params = Array.prototype.slice.call(arguments);
   if (!window.clarity) {
-    throw new Error("Hotjar is not initialized");
+    throw new Error("Clarity is not initialized");
   }
 
   window.clarity.apply(undefined, params);
 }
 
-function initialize(id) {
+function init(id) {
   clarityInit(id);
 }
 
-function initialized() {
+function hasStarted() {
   return typeof window.clarity === "function";
 }
 
@@ -27,8 +27,8 @@ function upgrade(reason) {
 
 module.exports = {
   clarity: {
-    initialize,
-    initialized,
+    init,
+    hasStarted,
     identify,
     upgrade,
   },

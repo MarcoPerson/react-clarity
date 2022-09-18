@@ -10,16 +10,17 @@ npm install react-microsoft-clarity --save
 ```javascript
 import { clarity } from 'react-microsoft-clarity';
 
-clarity.initialize(id);
+// Start seeing data on the Clarity dashboard with your id
+clarity.init(id);
 
 // Identify the user
 clarity.identify('USER_ID', { userProperty: 'value' });
 
-// Upgrade Session
-clarity.upgrade('Upgrade_Reason');
+// Upgrade session
+clarity.upgrade('upgradeReason');
 
-// Check if Hotjar has been initialized before calling its methods
-if (clarity.initialized()) {
+// Check if Clarity has been initialized before calling its methods
+if (clarity.hasStarted()) {
   clarity.identify('USER_ID', { userProperty: 'value' });
 }
 ```
