@@ -16,6 +16,12 @@ clarity.init(id);
 // Identify the user
 clarity.identify('USER_ID', { userProperty: 'value' });
 
+// Cookie consent
+clarity.consent();
+
+// Setup a custom tag
+clarity.setTag('key', 'value');
+
 // Upgrade session
 clarity.upgrade('upgradeReason');
 

@@ -19,6 +19,21 @@ export module clarity {
       userId: string,
       properties: Record<string, any>
     ): void;
+
+    /**
+     * Cookie Consent
+     */
+    export function consent(): void;
+
+    /**
+     * Setup custom tags
+     * @param key The tag name that identifies the kind of information you're sending
+     * @param value The value attached to the tag
+     */
+    export function setTag(
+      key: string,
+      value: string
+    ): void;
   
     /**
      * Upgrade Session
