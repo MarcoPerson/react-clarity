@@ -14,7 +14,7 @@ import { clarity } from 'react-microsoft-clarity';
 clarity.init(id);
 
 // Identify the user
-clarity.identify('USER_ID', { userProperty: 'value' });
+clarity.identify('USER_ID', 'SESSION_ID', 'PAGE_ID');
 
 // Cookie consent
 clarity.consent();
@@ -27,7 +27,7 @@ clarity.upgrade('upgradeReason');
 
 // Check if Clarity has been initialized before calling its methods
 if (clarity.hasStarted()) {
-  clarity.identify('USER_ID', { userProperty: 'value' });
+  clarity.identify('USER_ID', 'SESSION_ID', 'PAGE_ID');
 }
 ```
 - id: Stands for 'Clarity ID' - Your site's ID. This is the ID which tells Clarity which site settings it should load and where it should save the data collected.

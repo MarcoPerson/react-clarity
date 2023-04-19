@@ -17,8 +17,8 @@ function hasStarted() {
   return typeof window.clarity === "function";
 }
 
-function identify(userId, properties) {
-  clarity("identify", userId, properties);
+function identify(userId, sessionId, pageId) {
+  clarity("identify", userId, sessionId, pageId);
 }
 
 function consent() {
