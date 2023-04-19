@@ -13,11 +13,13 @@ export module clarity {
     /**
      * Identify user
      * @param userId Unique ID of a user
-     * @param properties Additional properties describing your user
+     * @param sessionId - Optional ID for the user's session.
+     * @param pageId - Optional ID for the current page.
      */
     export function identify(
       userId: string,
-      properties: Record<string, any>
+      sessionId?: string,
+      pageId?: string
     ): void;
 
     /**
