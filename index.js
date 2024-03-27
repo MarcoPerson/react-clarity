@@ -29,6 +29,10 @@ function setTag(key, value) {
   clarity("set", key, value);
 }
 
+function setEvent(event) {
+  clarity("event", event);
+}
+
 function upgrade(reason) {
   clarity("upgrade", reason);
 }
@@ -40,6 +44,7 @@ module.exports = {
     identify,
     consent,
     setTag,
+    setEvent,
     upgrade,
   },
 };
