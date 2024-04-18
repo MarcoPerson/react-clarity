@@ -21,8 +21,8 @@ function identify(userId, properties) {
   clarity("identify", userId, properties);
 }
 
-function consent() {
-  clarity("consent");
+function consent(value = true) {
+  clarity("consent", value);
 }
 
 function setTag(key, value) {

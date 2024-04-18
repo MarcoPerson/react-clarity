@@ -22,8 +22,9 @@ export module clarity {
 
     /**
      * Cookie Consent
+     * @param value The value for user consent
      */
-    export function consent(): void;
+    export function consent(value?: boolean): void;
 
     /**
      * Setup custom tags
