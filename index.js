@@ -33,6 +33,14 @@ function upgrade(reason) {
   clarity("upgrade", reason);
 }
 
+function stop() {
+  clarity("stop");
+}
+
+function start() {
+  clarity("start");
+}
+
 module.exports = {
   clarity: {
     init,
@@ -41,5 +49,7 @@ module.exports = {
     consent,
     setTag,
     upgrade,
+    stop,
+    start
   },
 };

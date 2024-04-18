@@ -42,5 +42,15 @@ export module clarity {
     export function upgrade(
       reason: string,
     ): void;
+
+    /**
+     * Stop Clarity
+     */
+    export function stop(): void;
+
+    /**
+     * Start Clarity
+     */
+    export function start(): void;
   }
   
