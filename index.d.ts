@@ -32,7 +32,7 @@ export module clarity {
      */
     export function setTag(
       key: string,
-      value: string
+      value: string | string[]
     ): void;
   
     /**
