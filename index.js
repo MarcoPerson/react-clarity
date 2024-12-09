@@ -21,12 +21,24 @@ function identify(userId, properties) {
   clarity("identify", userId, properties);
 }
 
-function consent() {
-  clarity("consent");
+function consent(value = true) {
+  clarity("consent", value);
+}
+
+function stop() {
+  clarity("stop");
+}
+
+function start() {
+  clarity("start");
 }
 
 function setTag(key, value) {
   clarity("set", key, value);
+}
+
+function setEvent(name) {
+  clarity("event", name);
 }
 
 function upgrade(reason) {
@@ -39,7 +51,10 @@ module.exports = {
     hasStarted,
     identify,
     consent,
+    stop,
+    start,
     setTag,
+    setEvent,
     upgrade,
   },
 };

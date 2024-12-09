@@ -23,7 +23,17 @@ export module clarity {
     /**
      * Cookie Consent
      */
-    export function consent(): void;
+    export function consent(value?: boolean): void;
+
+    /**
+     * Stop Clarity
+     */
+    export function stop(): void;
+
+    /**
+     * Start Clarity
+     */
+    export function start(): void;
 
     /**
      * Setup custom tags
@@ -32,7 +42,15 @@ export module clarity {
      */
     export function setTag(
       key: string,
-      value: string
+      value: string | string[]
+    ): void;
+
+    /**
+     * Setup smart events
+     * @param name The name attached to the event
+     */
+    export function setEvent(
+      name: string
     ): void;
   
     /**

@@ -19,8 +19,17 @@ clarity.identify('USER_ID', { userProperty: 'value' });
 // Cookie consent
 clarity.consent();
 
+// Stop tracking user behavior analytics
+clarity.stop();
+
+// Restart tracking user behavior analytics
+clarity.start();
+
 // Setup a custom tag
 clarity.setTag('key', 'value');
+
+// Setup a smart event
+clarity.setEvent("eventName");
 
 // Upgrade session
 clarity.upgrade('upgradeReason');
